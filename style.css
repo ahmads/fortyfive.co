@@ -1,0 +1,90 @@
+*, :after, :before {
+	box-sizing: border-box;
+}
+
+html, body {
+	padding: 0;
+	margin: 0;
+	height: 100%;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	color: #FFF;
+	background-color: #FF0034;
+}
+
+.container {
+	padding: 60px 20px 20px 20px;
+	max-width: 760px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+@media only screen and (max-width: 767px) {
+	.container {
+		padding: 20px;
+	}
+}
+
+header * {
+	display: inline-block;
+}
+
+h1 {
+	font-size: 4.5em;
+	font-weight: 300;
+	font-family: 'Josefin Slab', serif;
+	}
+
+h2 {
+	font-size: 2em;
+	font-weight: 300;
+	font-family: 'Josefin Slab', serif;
+	margin-top: 4rem;
+}
+
+li a {
+	color: #FFF;
+	text-decoration: none;
+	border-bottom: 1px dotted #FFF;
+	text-transform: uppercase;
+}
+
+ul {
+	padding: 0;
+	margin: 0;
+}
+
+li {
+	display: inline-block;
+}
+
+li::after {
+	content: "/";
+	color: #000;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+li:last-child::after {
+	content: "";
+}
+
+.infoline {
+	max-width: 400px;
+}
+
+.contact {
+	margin-top: 4rem;
+	font-size: 0.9em;
+}
+
+.contact a {
+	color: #FFF;
+}
+
+::selection {
+	background-color: #9b59b6;
+	color: #fff;
+}
